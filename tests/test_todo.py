@@ -1,4 +1,4 @@
-import todo
+from todoapp import todo   
 
 def test_add_task():
     todo.todos.clear()
