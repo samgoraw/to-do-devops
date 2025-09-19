@@ -1,4 +1,11 @@
-from todoapp import todo   
+# tests/test_todo.py
+import sys
+import os
+
+# make repo root importable (so pytest can find todo.py at project root)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import todo
 
 def test_add_task():
     todo.todos.clear()
